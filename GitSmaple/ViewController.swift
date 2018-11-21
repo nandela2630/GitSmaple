@@ -10,12 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var reverseLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         print("dsf")
         
         print(reverse(text: "stressed"))
+        reverseLabel.text = reverse(text: "stressed")
         
     }
 
